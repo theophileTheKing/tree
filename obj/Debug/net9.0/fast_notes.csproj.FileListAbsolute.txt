@@ -1,0 +1,14 @@
+/home/theophile/Desktop/dotnet/fast_notes/bin/Debug/net9.0/fast_notes
+/home/theophile/Desktop/dotnet/fast_notes/bin/Debug/net9.0/fast_notes.deps.json
+/home/theophile/Desktop/dotnet/fast_notes/bin/Debug/net9.0/fast_notes.runtimeconfig.json
+/home/theophile/Desktop/dotnet/fast_notes/bin/Debug/net9.0/fast_notes.dll
+/home/theophile/Desktop/dotnet/fast_notes/bin/Debug/net9.0/fast_notes.pdb
+/home/theophile/Desktop/dotnet/fast_notes/obj/Debug/net9.0/fast_notes.GeneratedMSBuildEditorConfig.editorconfig
+/home/theophile/Desktop/dotnet/fast_notes/obj/Debug/net9.0/fast_notes.AssemblyInfoInputs.cache
+/home/theophile/Desktop/dotnet/fast_notes/obj/Debug/net9.0/fast_notes.AssemblyInfo.cs
+/home/theophile/Desktop/dotnet/fast_notes/obj/Debug/net9.0/fast_notes.csproj.CoreCompileInputs.cache
+/home/theophile/Desktop/dotnet/fast_notes/obj/Debug/net9.0/fast_notes.dll
+/home/theophile/Desktop/dotnet/fast_notes/obj/Debug/net9.0/refint/fast_notes.dll
+/home/theophile/Desktop/dotnet/fast_notes/obj/Debug/net9.0/fast_notes.pdb
+/home/theophile/Desktop/dotnet/fast_notes/obj/Debug/net9.0/fast_notes.genruntimeconfig.cache
+/home/theophile/Desktop/dotnet/fast_notes/obj/Debug/net9.0/ref/fast_notes.dll
