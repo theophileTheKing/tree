@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/theophile/Desktop/dotnet/fast_notes/fast_notes.csproj",
+      "projectUniqueName": "/home/theophile/Desktop/dotnet/fir/fast_notes.csproj",
       "projectName": "fast_notes",
-      "projectPath": "/home/theophile/Desktop/dotnet/fast_notes/fast_notes.csproj",
+      "projectPath": "/home/theophile/Desktop/dotnet/fir/fast_notes.csproj",
       "packagesPath": "/home/theophile/.nuget/packages/",
-      "outputPath": "/home/theophile/Desktop/dotnet/fast_notes/obj/",
+      "outputPath": "/home/theophile/Desktop/dotnet/fir/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/theophile/.nuget/NuGet/NuGet.Config"
