@@ -2,9 +2,8 @@
 
 // Take user input and convert to int
 Console.Write("Enter the height of your fir : ");
-number = int.Parse(Console.ReadLine());
+number = int.Parse(Console.ReadLine() ?? string.Empty);
 
-// Main loop
 Console.CursorVisible = false;
 bool value = true;
 while(value == true)
@@ -78,7 +77,7 @@ void printLog()
       Console.Write("  ");
     }
 
-    // Log in 1 or 2 chars
+    // Print the log with 1 or 2 chars
     if(log_width == 1)
     {
       Console.WriteLine("  H");
