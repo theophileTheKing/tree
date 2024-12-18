@@ -5,12 +5,10 @@ int number = int.Parse(Console.ReadLine() ?? string.Empty);
 Console.CursorVisible = false;
 bool consoleRunning = true;
 
-
 while(consoleRunning == true)
 {
   printFir(number, 10, 10);
 }
-
 
 // MARK: print fir
 void printFir(int number, int posX, int posY)
@@ -21,9 +19,7 @@ void printFir(int number, int posX, int posY)
   for(int lineCounter = 0; lineCounter < number; lineCounter++)
   {
 
-
     Console.SetCursorPosition(posX + number - lineCounter, posY + lineCounter);
-
 
     // Print columns
     for(int colCounter = 0; colCounter < lineCounter; colCounter++)
@@ -65,21 +61,17 @@ void printLog(int number, int posX, int posY){
     log_width = 2;
   }
 
-  // Print the log
   for(int height = 0; height < log_height; height++)
   {
 
     Console.SetCursorPosition(posX + number, posY + height + number);
 
-    // Print the log with 1 or 2 chars
+    // 1 or 2 chars for the log
     if(log_width == 1)
     {
       Console.WriteLine("H");
     } else {
-      Console.Write("  ");
-      Console.Write("|");
-      Console.Write(" ");
-      Console.WriteLine("|");
+      Console.WriteLine("||");
     }
   }
 }
