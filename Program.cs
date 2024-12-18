@@ -1,17 +1,19 @@
-﻿int number = 5;
-
-// Take user input and convert to int
+﻿// Take user input and convert to int
 Console.Write("Enter the height of your fir : ");
-number = int.Parse(Console.ReadLine() ?? string.Empty);
+int number = int.Parse(Console.ReadLine() ?? string.Empty);
 
 Console.CursorVisible = false;
-bool value = true;
-while(value == true)
+bool consoleRunning = true;
+
+
+while(consoleRunning == true)
 {
-  printFir();
+  printFir(number, 10, 10);
 }
 
-void printFir()
+
+// MARK: print fir
+void printFir(int number, int posX, int posY)
 {
   Console.Clear();
 
@@ -19,45 +21,42 @@ void printFir()
   for(int lineCounter = 0; lineCounter < number; lineCounter++)
   {
 
-    // Print spaces before the first character
-    for(int spaces = number-lineCounter; spaces > 0; spaces--)
-    {
-      Console.Write(" ");
-    }
+
+    Console.SetCursorPosition(posX + number - lineCounter, posY + lineCounter);
+
 
     // Print columns
     for(int colCounter = 0; colCounter < lineCounter; colCounter++)
     {
-      int random_number = new Random().Next(16);
+      int random_number = random(16);
       Console.ForegroundColor = ConsoleColor.White;
       Console.Write("^");
       Console.ForegroundColor = (ConsoleColor)random_number;
-      if(random_number < 6)
+      int random_char = random(3);
+      switch(random_char)
       {
-        Console.Write("O");
-      }
-      else if(random_number < 12)
-      {
-        Console.Write("$");
-      }
-      else
-      {
-        Console.Write("*");
+        case 0:
+          Console.Write("O");
+          break;
+        case 1:
+          Console.Write("$");
+          break;
+        case 2:
+          Console.Write("*");
+          break;
       }
     }
-    // Reset the foreground color to white for the log
     Console.ForegroundColor = ConsoleColor.White;
     Console.WriteLine("^");
   }
 
-  printLog();
-
+  printLog(number, posX, posY);
   Thread.Sleep(165);
 }
 
+// MARK: print log
+void printLog(int number, int posX, int posY){
 
-void printLog()
-{
   // Define the log's height and width
   int log_height = number / 4;
   int log_width = 1;
@@ -70,17 +69,12 @@ void printLog()
   for(int height = 0; height < log_height; height++)
   {
 
-    int log_space = (number / 2) - 1;
-
-    for(int spaces = 0; spaces < log_space; spaces++)
-    {
-      Console.Write("  ");
-    }
+    Console.SetCursorPosition(posX + number, posY + height + number);
 
     // Print the log with 1 or 2 chars
     if(log_width == 1)
     {
-      Console.WriteLine("  H");
+      Console.WriteLine("H");
     } else {
       Console.Write("  ");
       Console.Write("|");
@@ -88,4 +82,10 @@ void printLog()
       Console.WriteLine("|");
     }
   }
+}
+
+int random(int value)
+{
+  int random_number = new Random().Next(value);
+  return random_number;
 }
